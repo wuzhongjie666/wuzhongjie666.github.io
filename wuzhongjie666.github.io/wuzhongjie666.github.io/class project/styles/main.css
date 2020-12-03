@@ -1,6 +1,4 @@
-html{
-    background-image: url(image/bats.gif);
-}
+
 body{
     font-family: sans-serif;
     width: 800px;
@@ -19,10 +17,12 @@ body{
     text-shadow: black;
     margin-top: 0;
     margin-bottom: 0;
+	color: white;
 }
 .header2{    
     font-size:20px;
     margin-top: 0;
+	color: white;
 }
 img{
     float: left;
@@ -37,35 +37,19 @@ img{
 }
 
 #nav_menu ul{
-    list-style:none;
-    position: relative;
-    margin: auto;
-    padding-inline-start:0px;
-    background-color: black !important;
+    height: 60px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 #nav_menu ul li{
-    float: left;
-    width: 145px;
-    height: 20px;
+    
 }
-#nav_menu ul ul{
-    display: none;
-    position: absolute;
-    top: 100%;
-}
-#nav_menu ul ul li{
-    float: none;
-}
-#nav_menu ul li:hover>ul{
-    display: block;
-}
-#nav_menu>ul::after{
-    content: "";
-    display: block;
-    clear: both;
-}
+
 a{
-    color: orange;
+    color: white;
     margin-left: 0px;
     transition: color 1s ease-in 1s;
     text-decoration: none;
@@ -75,21 +59,23 @@ a{
     text-align: center;
 }
 header{
-    background:linear-gradient(45deg, white, orange 75%, black)!important;
-    border-bottom:2px solid black; 
-    linear-gradient(45deg, white, orange 75%, black);
+    border-bottom:2px solid black;
+	 background-color: purple;
 }
 footer{
-    background:linear-gradient(45deg, black, orange 75%, white) !important;
     border-top:2px solid black;
-    linear-gradient(45deg, black, orange 75%, white);
 }
+
 .zli{
-    border:1px solid black; 
-    background-color: orange; 
-    width: 130px;
+    border:3px white; 
+    background-color: white; 
+    width: 150px;
     height: 30px; 
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
+}
+
+a:hover{
+    color: green;
 }
